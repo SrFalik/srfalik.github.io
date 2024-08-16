@@ -210,3 +210,27 @@
 		}
 
 })(jQuery);
+
+function expandir() {
+	let elementos = document.getElementsByClassName('sumir');
+	let isHidden = true;
+	Array.from(elementos).forEach(function(elemento) {
+		let displayAtual = window.getComputedStyle(elemento).display;
+		if (displayAtual === 'none') {
+			elemento.style.display = 'inline';
+			isHidden = false;
+		} else {
+			elemento.style.display = 'none';
+			isHidden = true;
+		}
+	})
+	let botao1 = document.getElementById("botao1");
+	let botao2 = document.getElementById("botao2");
+	if (isHidden) {
+		botao1.textContent = "Expandir (16)";
+		botao2.textContent = "Expandir (3)";
+	} else {
+		botao1.textContent = "Reduzir";
+		botao2.textContent = "Reduzir";
+	}
+}
