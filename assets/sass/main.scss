@@ -849,3 +849,114 @@
 			}
 		}
 	}
+	
+	.card {
+		display: flex;
+		flex-direction: column;
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 10px;
+		width: 80%;
+		h3 {
+			display: flex;
+			justify-content: center;
+			margin-top: 5px;
+		}
+		ul {
+			margin: 0;
+			display: flex;
+			justify-content: start;
+			flex-direction: column;
+			padding: 0 !important; 
+			.sumir {
+				display: none;
+			}
+			li {
+				list-style: none;
+				padding: 5px;
+				border-radius: 5px;
+				display: flex;
+				width: 100%;
+				padding-left: 15px;
+				a {
+					text-decoration: none;
+					width: 100%;
+					display: flex;
+				}
+				&:hover {
+					background-color: rgba(66, 66, 66, 0.75);
+					transition: all ease 0.7s;
+					cursor: pointer;
+				}
+			}
+		}
+		.container-button {
+			.vermais {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 1rem;
+				width: 30%;
+				border-radius: 10px;
+				font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+				text-transform: uppercase;
+			}
+			margin-bottom: 10px;
+			margin-top: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.panel {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.7rem;
+		div {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+			a{
+				&:hover {
+					color: rgb(74, 185, 221);
+					transition: all ease 0.7s;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.introducao {
+		display: flex;
+		flex-direction: column;
+		font-size: 1.2rem;
+		margin-top: 10px;
+		div {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			a {
+				padding: 10px;
+				background-color: rgba(0, 0, 0, 0.5);
+				border-radius: 10px;
+				width: 30%;
+				text-decoration: none;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				&:hover {
+					background-color: rgba(0, 0, 0, 0.75);
+					transition: all ease 0.7s;
+					cursor: pointer;
+				}
+			}
+		}
+	}
