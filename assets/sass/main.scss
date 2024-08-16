@@ -849,7 +849,7 @@
 			}
 		}
 	}
-	
+
 	.card {
 		display: flex;
 		flex-direction: column;
@@ -867,7 +867,10 @@
 			justify-content: start;
 			flex-direction: column;
 			padding: 0 !important; 
-			.sumir {
+			.sumir1 {
+				display: none;
+			}
+			.sumir2 {
 				display: none;
 			}
 			li {
